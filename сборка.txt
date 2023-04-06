@@ -1,0 +1,35 @@
+
+//запуск
+
+g++ -o a main.cpp               (a - собраный файл (создаём)  main.cpp - файл   )
+./a                              (запуск)
+
+make main
+./main
+
+
+
+
+// библиотеки
+
+wget http://www.zlib.net/zlib-VERSION.tar.gz
+tar -xvzf zlib-VERSION.tar.gz
+./configure --prefix=/usr/local/zlib
+sudo make install
+//
+
+
+
+//
+https://coderoad.ru/34842904/SFML-2-0-Linux-проблема-установки
+
+g++ main.cpp -o sfml-app -L /Users/wedlec/SFML/lib -lsfml-graphics -lsfml-window -lsfml-system
+
+
+(
+sudo cp -r share/SFML/ /usr/local/share/
+sudo cp -r lib/* /usr/local/lib/
+sudo cp -r include/SFML /usr/local/include/
+)
+
+//
